@@ -1,0 +1,15 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: my-wiremock
+  namespace: wiremock1
+spec:
+  rules:
+  - host: wiremock.sit.api.axis.co.id
+    http:
+      paths:
+      - backend:
+          serviceName: my-wiremock
+          servicePort: 9021
+        path: /
+        pathType: Prefix

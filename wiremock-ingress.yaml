@@ -5,7 +5,7 @@ metadata:
   namespace: wiremock1
 spec:
   rules:
-  - host: wiremock.sit.api.axis.co.id
+  - host: wiremock.host.co.id
     http:
       paths:
       - backend:
